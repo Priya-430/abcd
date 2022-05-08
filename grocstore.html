@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocos </title>
+    <script src="mypro.js">
+        
+    </script>
+    
+</head>
+<style>
+    *body{
+        background-color: rgb(255, 255, 170);
+        padding: 0%;
+        text-align: center;
+        margin-left: 30%;
+    }
+    .header-1{
+        background-color: rgb(255, 255, 170);
+        text-align: center;
+    }
+    .header-2{
+        background-color: rgb(255, 255, 170);
+        text-align: center;
+    }
+    section{
+        text-align: center;
+    }
+   .image.h3{
+        background-color: rgb(156, 114, 114);
+    }
+
+    section.category{
+        background-color: rgb(171, 206, 171);
+  
+    }
+    section.products{
+        background-color: rgb(221, 192, 248);
+    }
+    button{
+        color: rgb(0, 0, 0);
+        background-color: rgb(160, 176, 177);
+        border-color: rgb(152, 178, 180);
+        height: 70px;
+        width: 250px;
+        font-size: xx-large;
+    }
+    form{
+        align-content: right;
+    }
+    ul{
+        list-style-type: none;
+       
+    }
+    .cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: rgb(253, 253, 253);}
+    .cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+    color: black;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+}
+
+.cart-quantity {
+    width: 35%;
+    color: black;
+}
+
+.cart-item-title {
+    color: rgb(0, 0, 0);
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+    color: black;
+}
+
+.btn-danger {
+    color: white;
+    background-color: rgb(255, 68, 68);
+    border-color: rgb(255, 153, 153);
+    border-radius: .3em;
+    height: 50px;
+    width:200px;
+
+    
+}
+    
+  
+</style>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <div class="header-2">
+
+        <div id="menu-bar" class="menu-bar" style="display:inline-flexbox">
+         
+            <li style="list-style-type:none ;position: fixed;">
+                <button style="background-color: rgb(126, 74, 82) ; color:rgb(253, 253, 253); height: 40px; width:100px; font-size: small;"> <a style="color: aliceblue;" href="#Home"> HOME </a></button>
+                <button style="background-color: rgb(126, 74, 82) ; color:rgb(253, 253, 253); height: 40px; width:100px; font-size: small;"> <a style="color: aliceblue;" href="#category">CATEGORIES </a></button>
+                <button style="background-color: rgb(126, 74, 82) ; color:rgb(253, 253, 253); height: 40px; width:100px; font-size: small;"> <a style="color: aliceblue;" href="#frequent"> PRODUCTS </a></button>
+                <button style="background-color: rgb(126, 74, 82) ; color:rgb(253, 253, 253); height: 40px; width:100px; font-size: small;"> <a style="color: aliceblue;" href="#cart"> CART </a></button>
+                <button style="background-color: rgb(126, 74, 82) ; color:rgb(253, 253, 253); height: 40px; width:100px; font-size: small;"> <a style="color: aliceblue;" href="#contact">  CONTACT </a> </button>
+            </li>
+            
+    </div>
+    <section class="Home" id="Home">
+        <div class="image" id="Home">
+            <img src="file:///D:/images/groc%20images/grocoss.jpeg" alt="" style="width:100% ;">
+            <h1 style="background-color:rgb(161, 136, 136) ;font-size: 45px; color: bisque;"> Get Started </h1> 
+        </div>
+        <div class="header-1">
+
+            <form action="" class="search-box-container">
+                <input type="search" id="search-box" placeholder="search here..." style= "height:70px;width:700px; font-size: 20px; text-align: center;">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </div>
+
+    </section>
+    <section class="category" id="category">
+        <div class="category" id="category">
+        <h1 class="heading" style="background-color:rgb(79, 99, 79) ; font-size:80px; color: bisque;"> Shop by category </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <h3 style="font-size:x-large ; background-color: rgb(105, 133, 105) ;">Vegetables | Upto 50% off </h3>
+                <img src="file:///D:/images/groc%20images/veggies.webp" alt="" style="height:350px ;width: 700px;"> <br>
+                <button style="background-color: rgb(125, 156, 125) ; color:rgb(253, 253, 253); height: 40px; width:100px; font-size: medium"> <a style="color: rgb(202, 202, 202);" href="#frequent"> Shop now </a></button>
+
+                <h3 style="font-size:x-large ;background-color: rgb(105, 133, 105) ;">Fruits | Upto 20% off </h3>
+                <img src="file:///D:/images/groc%20images/fruits.jpg" alt="" style="height:350px ;width: 700px;"> <br>
+                <button style="background-color: rgb(125, 156, 125) ; color:rgb(253, 253, 253); height: 40px; width:100px; font-size: medium"> <a style="color: rgb(202, 202, 202);" href="#frequent"> Shop now </a></button>
+                
+                <h3 style="font-size:x-large ;background-color: rgb(105, 133, 105) ;">Others | Upto 35% off </h3>
+                <img src="D:\images\groc images\others.jpg" alt="" style="height:400px ;width: 700px;"> <br>
+                <button style="background-color: rgb(125, 156, 125) ; color:rgb(253, 253, 253); height: 40px; width:100px; font-size: medium"> <a style="color: rgb(202, 202, 202);" href="#frequent"> Shop now </a></button>
+           
+            </div>
+        </div>
+        </div><br>
+    </section>    
+    <section class="container content-section" style="background-color:rgb(241, 169, 255)">
+        <div class="frequent" id="frequent">
+        <h2 class="section-header" style="font-size:70px ; background-color:rgb(139, 99, 150) "> PRODUCTS </h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title" style="font-size:50px ;"> <b> Tomatoes </b></span> <br>
+                <img class="shop-item-image" src="D:\images\groc images\tomatoes.jpg" style="height:350px ; width:750px"> <br>
+                <div class="shop-item-details">
+                    <span class="shop-item-price" style="font-size:30px ;"> <b>Rs. 50.75 </b></span> <br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title"style="font-size:50px ;"> <b> Bananas </b></span> <br>
+                <img class="shop-item-image" src="D:\images\groc images\bananas.jpg"style="height:350px ; width:750px"> <br>
+                <div class="shop-item-details">
+                    <span class="shop-item-price"style="font-size:30px ;"> <b>Rs.25.99 </b></span> <br>
+                    <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title"style="font-size:50px ;"> <b> Chicken meat </b></span> <br>
+                <img class="shop-item-image" src="D:\images\groc images\chicken.jpg"style="height:350px ; width:750px"> <br>
+                <div class="shop-item-details">
+                    <span class="shop-item-price"style="font-size:30px ;"> <b>Rs.120.99 </b></span> <br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title"style="font-size:50px ;"> <b> Milk </b></span> <br>
+                <img class="shop-item-image" src="file:///D:/images/groc%20images/milk.webp"style="height:350px ; width:750px"> <br>
+                <div class="shop-item-details">
+                    <span class="shop-item-price"style="font-size:30px ;"> <b>Rs.60.89 </b></span> <br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title"style="font-size:50px ;"> <b> Fruit Juice </b></span> <br>
+                <img class="shop-item-image" src="D:\images\groc images\juices.jpg"style="height:350px ; width:750px"> <br>
+                <div class="shop-item-details">
+                    <span class="shop-item-price"style="font-size:30px ;"> <b>Rs.30.99 </b></span> <br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button> <br> <br>
+                </div> 
+            </div></div>
+        </div>
+    </section>
+    <section class="category" id="category">
+        <div class="category" id="category">
+        <h1 class="heading" style="background-color:rgb(79, 99, 79) ; font-size:80px; color: bisque;"> Shop by category </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <h3 style="font-size:x-large ; background-color: rgb(105, 133, 105) ;">Vegetables | Upto 50% off </h3>
+                <img src="file:///D:/images/groc%20images/veggies.webp" alt="" style="height:350px ;width: 700px;"> <br>
+                <button type="button"> Shop now </button>
+                <h3 style="font-size:x-large ;background-color: rgb(105, 133, 105) ;">Fruits | Upto 20% off </h3>
+                <img src="file:///D:/images/groc%20images/fruits.jpg" alt="" style="height:350px ;width: 700px;"> <br>
+                <button type="button"> Shop now </button>
+                <h3 style="font-size:x-large ;background-color: rgb(105, 133, 105) ;">Others | Upto 35% off </h3>
+                <img src="D:\images\groc images\others.jpg" alt="" style="height:400px ;width: 700px;"> <br>
+                <button type="button"> Shop now </button>
+           
+            </div>
+        </div>
+        </div><br>
+    </section>    
+    <section class="container content-section">
+        <div class="cart" id="cart" style="background-color:rgb(166, 166, 255);">
+           
+        <h2 class="section-header" style="background-color:rgb(68, 68, 128) ; color:rgb(255, 239, 220);font-size: 70px;">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div> <br> 
+        <div class="cart-total">
+            <strong class="cart-total-title" style="font-size: 40px;">Total | </strong>
+            <span class="cart-total-price" style="font-size: 40px;">  $0</span>
+        </div> <br>
+        <button class="btn btn-primary btn-purchase" type="button" style="background-color:rgb(192, 189, 189)">PURCHASE</button> <br> <br>
+        </div> <br> 
+    </section>
+<section class="contact" id="contact" style="background-color:rgb(166, 255, 166);">
+    <div class="contact" id="contact" ></div>
+    <h1 class="heading" style="font-size:70px; background-color: rgb(79, 114, 79); color:rgb(219, 250, 219)"> CONTACT US </h1>
+        
+        <form action="">
+        
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="email">
+                <br>
+                <input type="number" placeholder="Contact number">
+                <input type="text" placeholder="Subject">
+            </div> <br>
+        
+            <textarea placeholder="message" name="" id="" cols="50" rows="10" style="text-align: center; border-color: aliceblue;"></textarea> <br>
+        
+            <input type="submit" value="Send message" class="btn">
+        
+            </form>
+            <br>
+        </div>
+        </section>
+</section>
+<section class="newsletter">
+
+    <h3 style="font-size:x-large;">Subscribe us for latest updates</h3>
+
+    <form action="">
+        <input class="box" type="email" placeholder="Enter your email">
+        <input type="submit" value="Subscribe" class="btn" style="background-color: rgb(163, 95, 95); border-color: rgb(194, 136, 136);">
+    </form>
+<br> <br>
+</section>
+</body>
+</html>
